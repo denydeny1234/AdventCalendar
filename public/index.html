@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas wish</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="countdown-home">
+      <div class="countdownContainer">
+        <h2>Countdown XMas</h2>
+        <div class="countdown">
+          <div class="containerDay">
+            <h3 class="day">Time</h3>
+            <h4>Days</h4>
+          </div>
+          <div class="containerHour">
+            <h3 class="hour">Time</h3>
+            <h4>Hours</h4>
+          </div>
+          <div class="containerMinute">
+            <h3 class="minute">Time</h3>
+            <h4>Minute</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="menuButtons">
+        <h2>
+          Do you wish to have a stronger connection with Santa? This is your
+          opportunity
+        </h2>
+        <a href="#santa-letter-home"
+          ><button class="btn">Santa letter</button></a
+        >
+        <a href="#advent-calendar-home"
+          ><button class="btn">Advent movie calendar</button></a
+        >
+      </div>
+    </section>
+
+    <form method="POST" action="/">
+      <section id="santa-letter-home">
+        <img
+          class="santaTrain"
+          src="images/letterSantaTrain.png"
+          alt="santa-train"
+        />
+        <div class="paperBg">
+          <h1>Dear Santa,</h1>
+          <textarea name="textAreaMessage" id="" cols="30" rows="20"></textarea>
+          <input
+            class="emailAdress"
+            type="email"
+            name="email"
+            placeholder="Your email"
+            required
+          />
+          <img
+            class="santaCar"
+            src="images/letterSantaCar.png"
+            alt="santa-car"
+          />
+          <button class="btnSubmit" type="submit">Send letter</button>
+        </div>
+      </section>
+    </form>
+
+    <section id="advent-calendar-home">
+      <img class="topBranch" src="images/treeBranchTop.png" alt="top-branch" />
+      <img
+        class="titleCalendar"
+        src="images/titleCalendar.png"
+        alt="title-Calendar"
+      />
+      <h1>MOVIES</h1>
+
+      <div class="movies">
+        <img class="cookie bell" src="images/bellCookie.png" alt="" />
+
+        <img class="cookie heart" src="images/heartCookie.png" alt="" />
+
+        <div class="container"></div>
+        <img class="cookie star" src="images/starCookie.png" alt="" />
+        <img class="cookie tree" src="images/treeCookie.png" alt="" />
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
